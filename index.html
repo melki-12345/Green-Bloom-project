@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBloom Botanicals - Premium Plants & Accessories</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>GreenBloom</h1>
+        </div>
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search plants...">
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#featured">Featured</a>
+            <a href="#products">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer">
+        <div class="cart-drawer-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-total">
+            <div class="cart-total-row">
+                <span>Subtotal:</span>
+                <span class="subtotal">$0.00</span>
+            </div>
+            <div class="cart-total-row">
+                <span>Tax (10%):</span>
+                <span class="tax">$0.00</span>
+            </div>
+            <div class="cart-total-row">
+                <strong>Total:</strong>
+                <strong class="total">$0.00</strong>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bring Nature Indoors</h1>
+            <p>Discover our curated collection of beautiful plants and accessories</p><br>
+            <a href="products.html" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="featured" class="featured-section">
+        <div class="container">
+            <div class="featured-header">
+                <h2 class="section-title">Featured Plants</h2>
+                <p class="featured-subtitle">Discover our handpicked selection of trending and seasonal favorites</p>
+            </div>
+            
+            <div class="featured-highlights">
+                <div class="highlight-card new-arrival">
+                    <span class="highlight-tag">New Arrival</span>
+                    <div class="highlight-content">
+                        <h3>Just Landed</h3>
+                        <p>Explore our latest additions</p>
+                    </div>
+                </div>
+                <div class="highlight-card best-seller">
+                    <span class="highlight-tag">Best Seller</span>
+                    <div class="highlight-content">
+                        <h3>Customer Favorites</h3>
+                        <p>Our most loved plants</p>
+                    </div>
+                </div>
+                <div class="highlight-card special-offer">
+                    <span class="highlight-tag">Special Offer</span>
+                    <div class="highlight-content">
+                        <h3>Limited Time</h3>
+                        <p>Special discounts available</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-filters">
+                <a href="products.html?category=featured" class="filter-pill">
+                    <i class="fas fa-star"></i>
+                    <span>All Featured</span>
+                </a>
+                <a href="products.html?category=new" class="filter-pill">
+                    <i class="fas fa-leaf"></i>
+                    <span>New Arrivals</span>
+                </a>
+                <a href="products.html?category=trending" class="filter-pill">
+                    <i class="fas fa-fire"></i>
+                    <span>Trending</span>
+                </a>
+                <a href="products.html?category=onsale" class="filter-pill">
+                    <i class="fas fa-tag"></i>
+                    <span>On Sale</span>
+                </a>
+            </div>
+            
+            <div class="featured-grid">
+                <!-- Featured products will be dynamically populated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Collection Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="collection-header">
+                <h2 class="section-title">Our Complete Collection</h2>
+                <p class="collection-subtitle">Browse our entire catalog of plants and accessories</p>
+            </div>
+            
+            <div class="collection-filters">
+                <button class="collection-filter" data-category="all" onclick="window.location.href='products.html'">
+                    <i class="fas fa-seedling"></i>
+                    <span>Our Plants collection</span>
+                </button>
+            </div>
+
+            <div class="products-grid">
+                <!-- All products will be dynamically populated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-header">
+                <h2 class="section-title">About GreenBloom</h2>
+                <p class="about-intro">At GreenBloom Botanicals, we're passionate about bringing the beauty and benefits of nature into your space. Our carefully curated collection of plants and accessories is designed to help you create your own urban jungle.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Premium Quality</h3>
+                        <p>Hand-picked, healthy plants from trusted growers with guaranteed freshness and vitality.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Safe Delivery</h3>
+                        <p>Carefully packaged and delivered to your doorstep with temperature-controlled shipping.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Expert Care</h3>
+                        <p>Detailed care instructions and ongoing support from our plant specialists.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Sustainability</h3>
+                        <p>Eco-friendly practices and packaging with a commitment to environmental responsibility.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-stats">
+                <div class="stat-card">
+                    <h3>5000+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-card">
+                    <h3>200+</h3>
+                    <p>Plant Varieties</p>
+                </div>
+                <div class="stat-card">
+                    <h3>98%</h3>
+                    <p>Positive Reviews</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-header">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Visit Us</h3>
+                        </div>
+                        <p>123 Green Street, Botanica City</p>
+                        <p>Open Mon-Sat: 9AM - 6PM</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-header">
+                            <i class="fas fa-phone"></i>
+                            <h3>Call Us</h3>
+                        </div>
+                        <p>+1 (555) 123-4567</p>
+                        <p>Customer Support: 24/7</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-header">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email Us</h3>
+                        </div>
+                        <p>hello@greenbloom.com</p>
+                        <p>support@greenbloom.com</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="https://formsubmit.co/mergemindsofficial@gmail.com" method="POST">
+                    <div class="form-header">
+                        <h3>Send us a Message</h3>
+                        <p>We'll get back to you within 24 hours</p>
+                    </div>
+                    
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://greenbloom.com/thankyou.html">
+                    
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="How can we help you?" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us more about your inquiry..." required></textarea>
+                    </div>
+
+                    <div class="form-footer">
+                        <button type="submit" class="submit-button">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Join Our Green Community</h2>
+        <p>Subscribe to receive plant care tips, special offers, and new arrival updates!</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="cta-button">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GreenBloom</h3>
+                <p>Your trusted source for premium plants and botanical accessories.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#home"><u>Home</u></a><br>
+                <a href="#featured"><u>Featured</u></a><br>
+                <a href="#products"><u>Shop</u></a><br>
+                <a href="#about"><u>About</u></a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="text-align: center;"><i>&copy; 2024 GreenBloom Botanicals. All rights reserved.</i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
